@@ -14,18 +14,11 @@ public Laiva(String nimi, int pituus, int x, int y, boolean horizontal) {
 }
 
 public boolean mahdutko(int leveys, int korkeus) {
-	if(x+pituus<leveys) {
-		return true;
-	}
-	else {
-		return false;
-	}
-	if(y+korkeus<korkeus) {
+	if(x+pituus<leveys||y+pituus<korkeus) {
 		return true;
 	}
 	else {
 		return false;
 	}
 	}
-}
 }
