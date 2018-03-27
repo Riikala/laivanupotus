@@ -1,4 +1,5 @@
 public class Ammus {
+	public static final String TYHJA="~";
 	private int x;
 	private int y;
 	private String osui; 
@@ -6,11 +7,15 @@ public class Ammus {
 public Ammus(int x, int y) {
 	this.x=x;
 	this.y=y;
-	osui= "~";
+	osui= TYHJA;
 }
 
 public void osui(){
 	osui="X";
+}
+
+public void huti() {
+	osui="O";
 }
 
 public String getOsui() {
