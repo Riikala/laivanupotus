@@ -6,7 +6,7 @@ public class Ammus {
 public Ammus(int x, int y) {
 	this.x=x;
 	this.y=y;
-	osui= "~";a
+	osui= "~";
 }
 
 public void osui(){
