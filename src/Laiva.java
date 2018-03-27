@@ -30,13 +30,13 @@ public boolean onkoOsuma(int ammuttux, int ammuttuy) {
 	else return (y+pituus>ammuttuy&&y<ammuttuy);
 	}
 
-public void vastaanota(int ammuttux, int ammuttuy) {
-	if(onkoOsuma(ammuttux, ammuttuy)==true) {
+public void vastaanota(Ammus ammus) {
+	if(onkoOsuma(ammus.getX(), ammus.getY())==true) {
 		if (horizontal) {
-			osumat[ammuttux-x]=true;
+			osumat[ammus.getX()-x]=true;
 		}
 		else {
-			osumat[ammuttuy-y]=true;
+			osumat[ammus.getY()-y]=true;
 		}
 	}
 }
