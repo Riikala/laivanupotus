@@ -8,15 +8,28 @@ public Ammus(int x, int y) {
 	this.y=y;
 	osui= "~";a
 }
-public String getOsui() {
-	return osui;
-}
+
 public void osui(){
 	osui="X";
 }
+
+public String getOsui() {
+	return osui;
+}
+
+public Boolean kohdassa() {
+	if(x==j&&y==p) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
 public int getX() {
 	return x;
 }
+
 public int getY() {
 	return y;
 }
