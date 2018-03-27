@@ -4,6 +4,7 @@ public class Laiva  {
 	private int x;
 	private int y;
 	private boolean horizontal;
+	private boolean[] osumat;
 
 public Laiva(String nimi, int pituus, int x, int y, boolean horizontal) {
 	nimi=nimi;
@@ -11,6 +12,7 @@ public Laiva(String nimi, int pituus, int x, int y, boolean horizontal) {
 	x=x;
 	y=y;
 	horizontal=horizontal;
+	osumat=new boolean[pituus];
 }
 
 public boolean mahdutko(int leveys, int korkeus) {
