@@ -23,11 +23,21 @@ public boolean mahdutko(int leveys, int korkeus) {
 		return false;
 	}
 }
-public boolean vastaanota(int ammuttux, int ammuttuy) {
+public boolean onkoOsuma(int ammuttux, int ammuttuy) {
 	if(horizontal==false) {
 		return (x+pituus>ammuttux&&x<ammuttux);
 	}
 	else return (y+pituus>ammuttuy&&y<ammuttuy);
 	}
-}
 
+public void vastaanota(int ammuttux, int ammuttuy) {
+	if(onkoOsuma(ammuttux, ammuttuy)==true) {
+		if (horizontal) {
+			osumat[ammuttux-x]=true;
+		}
+		else {
+			osumat[ammuttuy-y]=true;
+		}
+	}
+}
+}
