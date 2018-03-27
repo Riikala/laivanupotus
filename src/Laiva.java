@@ -22,5 +22,12 @@ public boolean mahdutko(int leveys, int korkeus) {
 	else {
 		return false;
 	}
+}
+public boolean vastaanota(int ammuttux, int ammuttuy) {
+	if(horizontal==false) {
+		return (x+pituus>ammuttux&&x<ammuttux);
+	}
+	else return (y+pituus>ammuttuy&&y<ammuttuy);
 	}
 }
+
