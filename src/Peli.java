@@ -1,11 +1,22 @@
+import java.util.Scanner;
 
 public class Peli {
 
 	public static void main(String[] args) {
+		Peli laivanupotus=new Peli();
+		laivanupotus.aloitaPeli();
+	}
+	private void aloitaPeli() {
 		Kentta k=new Kentta();
+		Laiva laivaL=new Lentotukialus("Titanic", );
+		k.lisaaLaiva(laivaL);
+		System.out.println("Anna koordinaatti x");
+		Scanner sc=new Scanner(System.in);
+		int kohdex=sc.nextInt();
+		System.out.println("Anna koordinaatti y");
+		int kohdey=sc.nextInt();
 		
-		k.lisaaLaiva();
-
+		k.ammu(kohdex, kohdey);
 	}
 
 }

@@ -15,4 +15,10 @@ public class Kentta {
 			laivaLista.add(laiva1);
 		}
 	}
+	public void ammu(int kohdex, int kohdey) {
+		for (int i=0; i<laivaLista.size(); i++) {
+			laivaLista.get(i).vastaanota(kohdex,kohdey);
+		}
+		
+	}
 }
