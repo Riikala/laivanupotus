@@ -8,14 +8,14 @@ public class Lentotukialus extends Laiva {
 		return "Lentotukialus";
 	}
 	@Override
-	public void vastaanota(int ammuttux, int ammuttuy) {
+	public void vastaanota(Ammus a) {
 		if(suojat!=0) {
 			suojat=suojat-1;
 		}
 		
 		// TODO Auto-generated method stub
 		else{
-			super.vastaanota(ammuttux, ammuttuy);
+			super.vastaanota(a);
 		}
 	}
 

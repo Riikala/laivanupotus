@@ -22,7 +22,7 @@ public String getOsui() {
 	return osui;
 }
 
-public Boolean kohdassa() {
+public Boolean kohdassa(int j, int p) {
 	if(x==j&&y==p) {
 		return true;
 	}
