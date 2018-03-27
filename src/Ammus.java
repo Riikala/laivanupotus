@@ -1,4 +1,6 @@
-public class Ammus {
+import java.io.Serializable;
+
+public class Ammus implements Serializable{
 	public static final String TYHJA="~";
 	private int x;
 	private int y;

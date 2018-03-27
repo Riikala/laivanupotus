@@ -1,4 +1,6 @@
-public class Lentotukialus extends Laiva {
+import java.io.Serializable;
+
+public class Lentotukialus extends Laiva implements Serializable{
 	int suojat=1;
 	public Lentotukialus(String nimi, int x, int y, boolean horizontal) {
 		super(nimi, 5, x, y, horizontal);{
@@ -17,6 +19,10 @@ public class Lentotukialus extends Laiva {
 		else{
 			super.vastaanota(a);
 		}
+	}
+	@Override
+	public String toString() {
+		return "Lentotukialus [suojat=" + suojat + " "+super.toString()+"]";
 	}
 
 }

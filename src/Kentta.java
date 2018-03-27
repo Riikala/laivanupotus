@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Kentta {
+public class Kentta implements Serializable{
 	private int x=10;
 	private int y=10;
 	private ArrayList<Laiva> laivaLista = new ArrayList<>();
@@ -14,10 +15,12 @@ public class Kentta {
 	public void lisaaLaiva(Laiva laiva1) {
 		if (laiva1.mahdutko(x, y)) {
 			laivaLista.add(laiva1);
+			System.out.println("laiva lis");
 		}
 	}
 	public void ammu(Ammus a) {
 		ammusLista.add(a);
+		System.out.println(laivaLista);
 		for (int i=0; i<laivaLista.size(); i++) {
 			laivaLista.get(i).vastaanota(a);
 		}
@@ -29,7 +32,7 @@ public class Kentta {
 			for (int p=0; p<y; p++) {
 				System.out.print(etsiAmmus(j,p).getOsui());
 			}
-			System.out.print("/n");
+			System.out.print("\n");
 		}
 	}
 	private Ammus etsiAmmus(int j, int p) {

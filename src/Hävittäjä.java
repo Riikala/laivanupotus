@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Hävittäjä extends Laiva{
+public class Hävittäjä extends Laiva implements Serializable{
 	public Hävittäjä(String nimi, int x, int y, boolean horizontal) {
 		super(nimi, 2, x, y, horizontal);{
 		}
