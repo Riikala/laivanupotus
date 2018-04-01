@@ -9,20 +9,5 @@ public class Lentotukialus extends Laiva implements Serializable{
 	public String getTyyppi() {
 		return "Lentotukialus";
 	}
-	@Override
-	public void vastaanota(Ammus a) {
-		if(suojat!=0) {
-			suojat=suojat-1;
-		}
-		
-		// TODO Auto-generated method stub
-		else{
-			super.vastaanota(a);
-		}
-	}
-	@Override
-	public String toString() {
-		return "Lentotukialus [suojat=" + suojat + " "+super.toString()+"]";
-	}
 
 }
